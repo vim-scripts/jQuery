@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:    jQuery
 " Maintainer:  Bruno Michel <brmichel@free.fr>
-" Last Change: May 4th, 2011
-" Version:     0.5
+" Last Change: May 28th, 2011
+" Version:     0.5.2
 " URL:         http://api.jquery.com/
 
 if version < 600
@@ -66,7 +66,7 @@ syn region  javaScriptStringS          start=+'+  skip=+\\\\\|\\'+  end=+'\|$+  
 syn cluster jSelectors      contains=jId,jClass,jOperators,jBasicFilters,jContentFilters,jVisibility,jChildFilters,jForms,jFormFilters
 syn match   jId             contained /#[0-9A-Za-z_\-]\+/
 syn match   jClass          contained /\.[0-9A-Za-z_\-]\+/
-syn match   jOperators      contained /*\|>\|+\|-\|~/
+syn match   jOperators      contained /*\|>\|+\|-\|\~/
 syn match   jBasicFilters   contained /:\(animated\|eq\|even\|first\|focus\|gt\|header\|last\|lt\|not\|odd\)/
 syn match   jChildFilters   contained /:\(first\|last\|nth\|only\)-child/
 syn match   jContentFilters contained /:\(contains\|empty\|has\|parent\)/
